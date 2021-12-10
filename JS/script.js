@@ -24,6 +24,6 @@ finish.addEventListener('click', function(evt){
     data = document.querySelectorAll('input')
     console.log(data[1].value)
     console.log(data[2].value)
-    message = document.querySelector('#message')
+    message = document.querySelector('#msg')
     console.log(message.value)
 })
