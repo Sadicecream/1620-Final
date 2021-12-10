@@ -16,8 +16,14 @@ document.addEventListener("DOMContentLoaded", evt => {
         body.classList.remove('light-theme')
         body.classList.add('dark-theme')
     }
-    else{
-        body.classList.add('light-theme')
-        body.classList.remove('dark-theme')
-    }
+})
+let finish = document.querySelector('#frm-btn')
+finish.addEventListener('click', function(evt){
+    evt.preventDefault()
+    evt.stopImmediatePropagation()
+    data = document.querySelectorAll('input')
+    console.log(data[1].value)
+    console.log(data[2].value)
+    message = document.querySelector('#message')
+    console.log(message.value)
 })
